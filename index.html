@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year 2026 Decoration</title>
+    <meta
+      name="description"
+      content="Create a personalized Happy New Year 2026 greeting with festive effects and share it with friends."
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Happy New Year 2026 Decoration" />
+    <meta
+      property="og:description"
+      content="Send a glowing Happy New Year 2026 greeting with fireworks and confetti!"
+    />
+    <meta property="og:image" content="/assets/preview.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="glow-ring"></div>
+        <p class="tagline">Celebrate the sparkle ✨</p>
+        <h1 class="headline">2026</h1>
+        <p id="greeting" class="greeting">Happy New Year 2026 🎆</p>
+        <p class="subtext">
+          Personalize your greeting, share the link, and spread the joy.
+        </p>
+      </section>
+
+      <section class="card">
+        <form id="name-form" class="form">
+          <label for="name" class="label">Your name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          />
+          <button type="submit" class="btn primary">Generate Share Link</button>
+        </form>
+
+        <div class="share">
+          <div class="share-link">
+            <input id="share-url" type="text" readonly />
+            <button id="copy-btn" class="btn ghost">Copy Link</button>
+          </div>
+          <div class="share-actions">
+            <a
+              id="whatsapp-share"
+              class="btn secondary"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Share on WhatsApp
+            </a>
+            <a
+              id="facebook-share"
+              class="btn secondary"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Share on Facebook
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <button id="surprise-btn" class="btn surprise">
+          🎁 Claim New Year Surprise
+        </button>
+        <p class="cta-note">Opens a surprise in a new tab.</p>
+      </section>
+    </main>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
